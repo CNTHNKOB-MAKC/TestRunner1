@@ -37,7 +37,7 @@ SLEEP 2
 CALL mvn package
 ECHO.
 ECHO Executing Java programm ...
-java -cp C:\%WS_DIR%\%REPO_NAME%\target\%REPO_NAME%-%APP_VERSION%.jar %MAIN_CLASS% %ARG_01%
+java -cp C:\%WS_DIR%\%REPO_NAME%\target\%REPO_NAME%-%APP_VERSION%-jar-with-dependencies.jar %MAIN_CLASS% %ARG_01%
 GOTO END
  
 :EXIT_JAVA
@@ -53,4 +53,4 @@ GOTO END
 ECHO %WS_DIR% is not exists
 GOTO END
 :END
-CD\
+ 
